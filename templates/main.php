@@ -13,6 +13,6 @@
     <hgroup>
         <h3><?= $title . " - " . $until_message ?> </h3>
         <p>Fecha de Estreno <?= $release_date ?></p>
-        <P>La Siguiente Pelicula es: <?= $following_production["title"] ?></P>
+        <P>La Siguiente Pelicula es: <?= $following_production ?></P>
     </hgroup>
 </main>

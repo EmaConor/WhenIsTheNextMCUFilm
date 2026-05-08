@@ -6,21 +6,3 @@ function render_template(string $template, array $data = [])
     extract($data);
     require "templates/$template.php";
 }
-
-function get_data (string $url): array
-{
-    $response = file_get_contents($url); // Si solo quieres hacer un GET de una API
-    return json_decode($response, true);
-}
-
-function get_until_message(int $days): string
-{
-    return match (true) {
-        $days === 0  => "Hoy se estrena",
-        $days === 1  => "Mañana se estrena",
-        $days < 7    => "Esta semana se estrena",
-        $days < 30   => "Este mes se estrena",
-        default      => "En $days dias se estrena",
-    };
-}
-?>
