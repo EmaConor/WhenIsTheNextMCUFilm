@@ -21,7 +21,7 @@ A simple PHP web application that shows information about the next upcoming Marv
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/WhenIsTheNextMCUFilm.git
+   git clone https://github.com/EmaConor/WhenIsTheNextMCUFilm.git
    cd WhenIsTheNextMCUFilm
    ```
 
